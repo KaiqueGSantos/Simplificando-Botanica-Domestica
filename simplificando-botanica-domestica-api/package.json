@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "importar:plantas": "node scripts/importar-plantas.js",
+    "configurar:pesos": "node scripts/configurar-pesos.js",
+    "test": "node --test"
   },
   "keywords": [],
   "author": "",

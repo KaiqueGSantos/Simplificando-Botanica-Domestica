@@ -1,0 +1,3162 @@
+{
+  "versao": "1.0.0",
+  "total_plantas": 100,
+  "unidades": {
+    "temperatura": "graus Celsius, temperatura do ar",
+    "umidade_ar": "percentual de umidade relativa do ar",
+    "ldr": "lux medidos junto às folhas durante o período iluminado",
+    "umidade_solo": "percentual relativo ao sensor calibrado no substrato do vaso"
+  },
+  "metodologia": {
+    "natureza": "Metas iniciais estimadas por grupos de cultivo; não são medições experimentais nem ideais comprovados individualmente para as 100 plantas.",
+    "uso": "id corresponde ao tipo_planta numérico da API; valores_ideais contém os quatro números para exibição; faixas_referencia servem como ponto inicial para pontuação e exigem ajuste para o ambiente real.",
+    "luz": "Lux é iluminância instantânea. Medir na altura da folhagem no período iluminado; não considerar a escuridão natural da noite como condição inadequada. Duração e espectro de luz também importam.",
+    "solo": "O percentual indicado pressupõe calibrar o mesmo sensor e substrato do vaso com referências seca e úmida após drenagem. Ele não equivale automaticamente ao teor volumétrico de água. A umidade oscila entre regas; valores do catálogo não são comandos automáticos de irrigação.",
+    "substratos_especiais": "Orquídeas, bromélias, chifres-de-veado e outros epífitos podem usar cascas, musgo ou montagem sem terra; para eles, a meta de umidade_solo só é ilustrativa e exige medição própria no substrato escolhido.",
+    "fontes": "As fontes apoiam as faixas gerais de luz e as práticas de cultivo; as quatro metas por espécie foram estimadas pela classificação em perfis e não constam literalmente das publicações."
+  },
+  "fontes_referencia": [
+    {
+      "titulo": "Lighting for Indoor Plants, University of Maryland Extension",
+      "url": "https://extension.umd.edu/resource/lighting-indoor-plants"
+    },
+    {
+      "titulo": "Lighting for indoor plants and starting seeds, University of Minnesota Extension",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/lighting-for-indoor-plants"
+    },
+    {
+      "titulo": "Temperature and Humidity for Indoor Plants, University of Maryland Extension",
+      "url": "https://www.extension.umd.edu/resource/temperature-and-humidity-indoor-plants"
+    },
+    {
+      "titulo": "Houseplant Varieties, University of Illinois Extension",
+      "url": "https://extension.illinois.edu/houseplants/varieties"
+    },
+    {
+      "titulo": "Watering Houseplants, University of Illinois Extension",
+      "url": "https://extension.illinois.edu/houseplants/watering"
+    },
+    {
+      "titulo": "Soil moisture sensors for irrigation scheduling, University of Minnesota Extension",
+      "url": "https://extension.umn.edu/natural-resources/conservation/agricultural-soil-and-water/irrigation/soil-moisture-sensors-for-irrigation-scheduling"
+    },
+    {
+      "titulo": "Growing herbs in home gardens, University of Minnesota Extension",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-herbs"
+    },
+    {
+      "titulo": "Growing tomatoes in home gardens, University of Minnesota Extension",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-tomatoes"
+    },
+    {
+      "titulo": "Growing lettuce, endive and radicchio, University of Minnesota Extension",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-lettuce-endive-and-radicchio"
+    },
+    {
+      "titulo": "NIST Guide to the SI, footcandle to lux",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"
+    }
+  ],
+  "plantas": [
+    {
+      "id": 1,
+      "nome": "Jiboia",
+      "nome_cientifico": "Epipremnum aureum",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_sombra",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 1500,
+        "umidade_solo": 45
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 700,
+          "max": 2700
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Jiboia-prateada",
+      "nome_cientifico": "Scindapsus pictus",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Filodendro-coração",
+      "nome_cientifico": "Philodendron hederaceum",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_sombra",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 1500,
+        "umidade_solo": 45
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 700,
+          "max": 2700
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Filodendro-xanadu",
+      "nome_cientifico": "Thaumatophyllum xanadu",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Pacová",
+      "nome_cientifico": "Philodendron martianum",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Costela-de-adão",
+      "nome_cientifico": "Monstera deliciosa",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Costela-de-adão-miúda",
+      "nome_cientifico": "Monstera adansonii",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Mini-costela-de-adão",
+      "nome_cientifico": "Rhaphidophora tetrasperma",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 9,
+      "nome": "Lírio-da-paz",
+      "nome_cientifico": "Spathiphyllum wallisii",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 10,
+      "nome": "Antúrio",
+      "nome_cientifico": "Anthurium andraeanum",
+      "tipo": "flor",
+      "perfil_cultivo": "tropical_umida_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 70,
+        "ldr": 8500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 85
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 11,
+      "nome": "Antúrio-cristalino",
+      "nome_cientifico": "Anthurium crystallinum",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 70,
+        "ldr": 8500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 85
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 12,
+      "nome": "Alocásia-polly",
+      "nome_cientifico": "Alocasia × amazonica 'Polly'",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 70,
+        "ldr": 8500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 85
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 13,
+      "nome": "Alocásia-zebrina",
+      "nome_cientifico": "Alocasia zebrina",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 70,
+        "ldr": 8500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 85
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 14,
+      "nome": "Orelha-de-elefante",
+      "nome_cientifico": "Alocasia macrorrhizos",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 70,
+        "ldr": 8500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 85
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 15,
+      "nome": "Singônio",
+      "nome_cientifico": "Syngonium podophyllum",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 16,
+      "nome": "Comigo-ninguém-pode",
+      "nome_cientifico": "Dieffenbachia seguine",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 17,
+      "nome": "Aglaonema-verde",
+      "nome_cientifico": "Aglaonema commutatum",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_sombra",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 1500,
+        "umidade_solo": 45
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 700,
+          "max": 2700
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 18,
+      "nome": "Aglaonema-vermelha",
+      "nome_cientifico": "Aglaonema 'Siam Aurora'",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 19,
+      "nome": "Zamioculca",
+      "nome_cientifico": "Zamioculcas zamiifolia",
+      "tipo": "folhagem",
+      "perfil_cultivo": "sombra_substrato_seco",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 45,
+        "ldr": 1500,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 30,
+          "max": 65
+        },
+        "ldr": {
+          "min": 700,
+          "max": 3000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 20,
+      "nome": "Espada-de-são-jorge",
+      "nome_cientifico": "Dracaena trifasciata",
+      "tipo": "folhagem",
+      "perfil_cultivo": "sombra_substrato_seco",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 45,
+        "ldr": 1500,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 30,
+          "max": 65
+        },
+        "ldr": {
+          "min": 700,
+          "max": 3000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 21,
+      "nome": "Lança-de-são-jorge",
+      "nome_cientifico": "Dracaena angolensis",
+      "tipo": "folhagem",
+      "perfil_cultivo": "sombra_substrato_seco",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 45,
+        "ldr": 1500,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 30,
+          "max": 65
+        },
+        "ldr": {
+          "min": 700,
+          "max": 3000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 22,
+      "nome": "Clorofito",
+      "nome_cientifico": "Chlorophytum comosum",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 23,
+      "nome": "Dracena-marginal",
+      "nome_cientifico": "Dracaena marginata",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 24,
+      "nome": "Pau-d'água",
+      "nome_cientifico": "Dracaena fragrans",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_sombra",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 1500,
+        "umidade_solo": 45
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 700,
+          "max": 2700
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 25,
+      "nome": "Dracena-reflexa",
+      "nome_cientifico": "Dracaena reflexa",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 26,
+      "nome": "Palmeira-ráfis",
+      "nome_cientifico": "Rhapis excelsa",
+      "tipo": "palmeira",
+      "perfil_cultivo": "folhagem_sombra",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 1500,
+        "umidade_solo": 45
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 700,
+          "max": 2700
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 27,
+      "nome": "Palmeira-de-salão",
+      "nome_cientifico": "Chamaedorea elegans",
+      "tipo": "palmeira",
+      "perfil_cultivo": "folhagem_sombra",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 1500,
+        "umidade_solo": 45
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 700,
+          "max": 2700
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 28,
+      "nome": "Palmeira-areca",
+      "nome_cientifico": "Dypsis lutescens",
+      "tipo": "palmeira",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 29,
+      "nome": "Palmeira-kentia",
+      "nome_cientifico": "Howea forsteriana",
+      "tipo": "palmeira",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 30,
+      "nome": "Ficus-lira",
+      "nome_cientifico": "Ficus lyrata",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 31,
+      "nome": "Ficus-borracha",
+      "nome_cientifico": "Ficus elastica",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 32,
+      "nome": "Ficus-benjamim",
+      "nome_cientifico": "Ficus benjamina",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 33,
+      "nome": "Ficus-ginseng",
+      "nome_cientifico": "Ficus microcarpa",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 34,
+      "nome": "Cheflera-anã",
+      "nome_cientifico": "Heptapleurum arboricola",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 35,
+      "nome": "Árvore-da-felicidade-fêmea",
+      "nome_cientifico": "Polyscias fruticosa",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 36,
+      "nome": "Peperômia-bebê",
+      "nome_cientifico": "Peperomia obtusifolia",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 37,
+      "nome": "Peperômia-melancia",
+      "nome_cientifico": "Peperomia argyreia",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 38,
+      "nome": "Peperômia-caperata",
+      "nome_cientifico": "Peperomia caperata",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 39,
+      "nome": "Pilea-chinesa",
+      "nome_cientifico": "Pilea peperomioides",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 40,
+      "nome": "Fitônia",
+      "nome_cientifico": "Fittonia albivenis",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 41,
+      "nome": "Maranta",
+      "nome_cientifico": "Maranta leuconeura",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 42,
+      "nome": "Calateia-zebrina",
+      "nome_cientifico": "Goeppertia zebrina",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 43,
+      "nome": "Calateia-ornata",
+      "nome_cientifico": "Goeppertia ornata",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 44,
+      "nome": "Calateia-orbifólia",
+      "nome_cientifico": "Goeppertia orbifolia",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 45,
+      "nome": "Estromante-tricolor",
+      "nome_cientifico": "Stromanthe sanguinea 'Triostar'",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 70,
+        "ldr": 8500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 85
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 46,
+      "nome": "Begônia-maculata",
+      "nome_cientifico": "Begonia maculata",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 70,
+        "ldr": 8500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 85
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 47,
+      "nome": "Begônia-rex",
+      "nome_cientifico": "Begonia rex-cultorum",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 48,
+      "nome": "Cóleo",
+      "nome_cientifico": "Plectranthus scutellarioides",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 49,
+      "nome": "Trapoeraba-roxa",
+      "nome_cientifico": "Tradescantia pallida",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 50,
+      "nome": "Lambari-roxo",
+      "nome_cientifico": "Tradescantia zebrina",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 51,
+      "nome": "Hera-inglesa",
+      "nome_cientifico": "Hedera helix",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 52,
+      "nome": "Hera-sueca",
+      "nome_cientifico": "Plectranthus verticillatus",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_meia_luz",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 4500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 6500
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 53,
+      "nome": "Samambaia-de-boston",
+      "nome_cientifico": "Nephrolepis exaltata",
+      "tipo": "samambaia",
+      "perfil_cultivo": "samambaia_umida",
+      "valores_ideais": {
+        "temperatura": 23,
+        "umidade_ar": 70,
+        "ldr": 3500,
+        "umidade_solo": 70
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 28
+        },
+        "umidade_ar": {
+          "min": 55,
+          "max": 85
+        },
+        "ldr": {
+          "min": 1500,
+          "max": 6000
+        },
+        "umidade_solo": {
+          "min": 50,
+          "max": 85
+        }
+      }
+    },
+    {
+      "id": 54,
+      "nome": "Asplênio",
+      "nome_cientifico": "Asplenium nidus",
+      "tipo": "samambaia",
+      "perfil_cultivo": "samambaia_umida",
+      "valores_ideais": {
+        "temperatura": 23,
+        "umidade_ar": 70,
+        "ldr": 3500,
+        "umidade_solo": 70
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 28
+        },
+        "umidade_ar": {
+          "min": 55,
+          "max": 85
+        },
+        "ldr": {
+          "min": 1500,
+          "max": 6000
+        },
+        "umidade_solo": {
+          "min": 50,
+          "max": 85
+        }
+      }
+    },
+    {
+      "id": 55,
+      "nome": "Renda-portuguesa",
+      "nome_cientifico": "Davallia fejeensis",
+      "tipo": "samambaia",
+      "perfil_cultivo": "samambaia_umida",
+      "valores_ideais": {
+        "temperatura": 23,
+        "umidade_ar": 70,
+        "ldr": 3500,
+        "umidade_solo": 70
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 28
+        },
+        "umidade_ar": {
+          "min": 55,
+          "max": 85
+        },
+        "ldr": {
+          "min": 1500,
+          "max": 6000
+        },
+        "umidade_solo": {
+          "min": 50,
+          "max": 85
+        }
+      }
+    },
+    {
+      "id": 56,
+      "nome": "Avenca",
+      "nome_cientifico": "Adiantum raddianum",
+      "tipo": "samambaia",
+      "perfil_cultivo": "samambaia_umida",
+      "valores_ideais": {
+        "temperatura": 23,
+        "umidade_ar": 70,
+        "ldr": 3500,
+        "umidade_solo": 70
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 28
+        },
+        "umidade_ar": {
+          "min": 55,
+          "max": 85
+        },
+        "ldr": {
+          "min": 1500,
+          "max": 6000
+        },
+        "umidade_solo": {
+          "min": 50,
+          "max": 85
+        }
+      }
+    },
+    {
+      "id": 57,
+      "nome": "Chifre-de-veado",
+      "nome_cientifico": "Platycerium bifurcatum",
+      "tipo": "samambaia",
+      "perfil_cultivo": "samambaia_umida",
+      "valores_ideais": {
+        "temperatura": 23,
+        "umidade_ar": 70,
+        "ldr": 3500,
+        "umidade_solo": 70
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 28
+        },
+        "umidade_ar": {
+          "min": 55,
+          "max": 85
+        },
+        "ldr": {
+          "min": 1500,
+          "max": 6000
+        },
+        "umidade_solo": {
+          "min": 50,
+          "max": 85
+        }
+      }
+    },
+    {
+      "id": 58,
+      "nome": "Aspargo-pluma",
+      "nome_cientifico": "Asparagus setaceus",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 59,
+      "nome": "Samambaia-azul",
+      "nome_cientifico": "Phlebodium aureum",
+      "tipo": "samambaia",
+      "perfil_cultivo": "samambaia_umida",
+      "valores_ideais": {
+        "temperatura": 23,
+        "umidade_ar": 70,
+        "ldr": 3500,
+        "umidade_solo": 70
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 28
+        },
+        "umidade_ar": {
+          "min": 55,
+          "max": 85
+        },
+        "ldr": {
+          "min": 1500,
+          "max": 6000
+        },
+        "umidade_solo": {
+          "min": 50,
+          "max": 85
+        }
+      }
+    },
+    {
+      "id": 60,
+      "nome": "Samambaia-paulista",
+      "nome_cientifico": "Nephrolepis cordifolia",
+      "tipo": "samambaia",
+      "perfil_cultivo": "samambaia_umida",
+      "valores_ideais": {
+        "temperatura": 23,
+        "umidade_ar": 70,
+        "ldr": 3500,
+        "umidade_solo": 70
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 28
+        },
+        "umidade_ar": {
+          "min": 55,
+          "max": 85
+        },
+        "ldr": {
+          "min": 1500,
+          "max": 6000
+        },
+        "umidade_solo": {
+          "min": 50,
+          "max": 85
+        }
+      }
+    },
+    {
+      "id": 61,
+      "nome": "Antúrio-de-veludo",
+      "nome_cientifico": "Anthurium clarinervium",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 70,
+        "ldr": 8500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 85
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 62,
+      "nome": "Ctenanthe",
+      "nome_cientifico": "Ctenanthe setosa",
+      "tipo": "folhagem",
+      "perfil_cultivo": "tropical_umida_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 4500,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 2500,
+          "max": 7000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 63,
+      "nome": "Orquídea-falenópsis",
+      "nome_cientifico": "Phalaenopsis amabilis",
+      "tipo": "orquidea",
+      "perfil_cultivo": "orquidea_substrato_aerado",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 65,
+        "ldr": 7500,
+        "umidade_solo": 40
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 4500,
+          "max": 11000
+        },
+        "umidade_solo": {
+          "min": 20,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 64,
+      "nome": "Bromélia-guzmânia",
+      "nome_cientifico": "Guzmania lingulata",
+      "tipo": "bromelia",
+      "perfil_cultivo": "bromelia_substrato_aerado",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 6500,
+        "umidade_solo": 40
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 3500,
+          "max": 10000
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 65,
+      "nome": "Bromélia-vriésia",
+      "nome_cientifico": "Vriesea splendens",
+      "tipo": "bromelia",
+      "perfil_cultivo": "bromelia_substrato_aerado",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 6500,
+        "umidade_solo": 40
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 3500,
+          "max": 10000
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 66,
+      "nome": "Bromélia-neoregélia",
+      "nome_cientifico": "Neoregelia carolinae",
+      "tipo": "bromelia",
+      "perfil_cultivo": "bromelia_substrato_aerado",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 65,
+        "ldr": 6500,
+        "umidade_solo": 40
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 20,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 50,
+          "max": 80
+        },
+        "ldr": {
+          "min": 3500,
+          "max": 10000
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 67,
+      "nome": "Flor-de-maio",
+      "nome_cientifico": "Schlumbergera truncata",
+      "tipo": "cacto",
+      "perfil_cultivo": "cacto_floresta",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 60,
+        "ldr": 7500,
+        "umidade_solo": 45
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 45,
+          "max": 75
+        },
+        "ldr": {
+          "min": 4500,
+          "max": 11000
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 68,
+      "nome": "Flor-de-cera",
+      "nome_cientifico": "Hoya carnosa",
+      "tipo": "flor",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 69,
+      "nome": "Hoya-coração",
+      "nome_cientifico": "Hoya kerrii",
+      "tipo": "folhagem",
+      "perfil_cultivo": "folhagem_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 8500,
+        "umidade_solo": 50
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 12000
+        },
+        "umidade_solo": {
+          "min": 30,
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": 70,
+      "nome": "Violeta-africana",
+      "nome_cientifico": "Streptocarpus ionanthus",
+      "tipo": "flor",
+      "perfil_cultivo": "flor_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 9000,
+        "umidade_solo": 55
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 14000
+        },
+        "umidade_solo": {
+          "min": 35,
+          "max": 75
+        }
+      }
+    },
+    {
+      "id": 71,
+      "nome": "Kalanchoe",
+      "nome_cientifico": "Kalanchoe blossfeldiana",
+      "tipo": "flor",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 72,
+      "nome": "Hibisco",
+      "nome_cientifico": "Hibiscus rosa-sinensis",
+      "tipo": "flor",
+      "perfil_cultivo": "flor_solar",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 20000,
+        "umidade_solo": 55
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 35,
+          "max": 75
+        }
+      }
+    },
+    {
+      "id": 73,
+      "nome": "Gardênia",
+      "nome_cientifico": "Gardenia jasminoides",
+      "tipo": "flor",
+      "perfil_cultivo": "flor_solar",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 20000,
+        "umidade_solo": 55
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 35,
+          "max": 75
+        }
+      }
+    },
+    {
+      "id": 74,
+      "nome": "Jasmim-árabe",
+      "nome_cientifico": "Jasminum sambac",
+      "tipo": "flor",
+      "perfil_cultivo": "flor_solar",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 55,
+        "ldr": 20000,
+        "umidade_solo": 55
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 19,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 70
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 35,
+          "max": 75
+        }
+      }
+    },
+    {
+      "id": 75,
+      "nome": "Bico-de-papagaio",
+      "nome_cientifico": "Euphorbia pulcherrima",
+      "tipo": "flor",
+      "perfil_cultivo": "flor_luz_intensa",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 9000,
+        "umidade_solo": 55
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 5500,
+          "max": 14000
+        },
+        "umidade_solo": {
+          "min": 35,
+          "max": 75
+        }
+      }
+    },
+    {
+      "id": 76,
+      "nome": "Planta-jade",
+      "nome_cientifico": "Crassula ovata",
+      "tipo": "suculenta",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 77,
+      "nome": "Babosa",
+      "nome_cientifico": "Aloe vera",
+      "tipo": "suculenta",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 78,
+      "nome": "Rosa-de-pedra",
+      "nome_cientifico": "Echeveria elegans",
+      "tipo": "suculenta",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 79,
+      "nome": "Rabo-de-burro",
+      "nome_cientifico": "Sedum morganianum",
+      "tipo": "suculenta",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 80,
+      "nome": "Haworthia-zebra",
+      "nome_cientifico": "Haworthiopsis attenuata",
+      "tipo": "suculenta",
+      "perfil_cultivo": "suculenta_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 40,
+        "ldr": 7000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 3500,
+          "max": 11000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 81,
+      "nome": "Planta-fantasma",
+      "nome_cientifico": "Graptopetalum paraguayense",
+      "tipo": "suculenta",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 82,
+      "nome": "Colar-de-pérolas",
+      "nome_cientifico": "Curio rowleyanus",
+      "tipo": "suculenta",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 83,
+      "nome": "Colar-de-corações",
+      "nome_cientifico": "Ceropegia woodii",
+      "tipo": "suculenta",
+      "perfil_cultivo": "suculenta_meia_luz",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 40,
+        "ldr": 7000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 3500,
+          "max": 11000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 84,
+      "nome": "Mandacaru",
+      "nome_cientifico": "Cereus jamacaru",
+      "tipo": "cacto",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 85,
+      "nome": "Figo-da-índia",
+      "nome_cientifico": "Opuntia ficus-indica",
+      "tipo": "cacto",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 86,
+      "nome": "Cacto-ouriço",
+      "nome_cientifico": "Echinopsis oxygona",
+      "tipo": "cacto",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 87,
+      "nome": "Ripsális",
+      "nome_cientifico": "Rhipsalis baccifera",
+      "tipo": "cacto",
+      "perfil_cultivo": "cacto_floresta",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 60,
+        "ldr": 7500,
+        "umidade_solo": 45
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 29
+        },
+        "umidade_ar": {
+          "min": 45,
+          "max": 75
+        },
+        "ldr": {
+          "min": 4500,
+          "max": 11000
+        },
+        "umidade_solo": {
+          "min": 25,
+          "max": 65
+        }
+      }
+    },
+    {
+      "id": 88,
+      "nome": "Pata-de-elefante",
+      "nome_cientifico": "Beaucarnea recurvata",
+      "tipo": "folhagem",
+      "perfil_cultivo": "suculenta_solar",
+      "valores_ideais": {
+        "temperatura": 26,
+        "umidade_ar": 40,
+        "ldr": 22000,
+        "umidade_solo": 25
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 25,
+          "max": 60
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 10,
+          "max": 45
+        }
+      }
+    },
+    {
+      "id": 89,
+      "nome": "Alecrim",
+      "nome_cientifico": "Salvia rosmarinus",
+      "tipo": "erva",
+      "perfil_cultivo": "erva_solar_seca",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 22000,
+        "umidade_solo": 40
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 17,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 20,
+          "max": 60
+        }
+      }
+    },
+    {
+      "id": 90,
+      "nome": "Manjericão",
+      "nome_cientifico": "Ocimum basilicum",
+      "tipo": "erva",
+      "perfil_cultivo": "erva_solar_umida",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 18000,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 10000,
+          "max": 30000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 91,
+      "nome": "Hortelã",
+      "nome_cientifico": "Mentha spicata",
+      "tipo": "erva",
+      "perfil_cultivo": "erva_solar_umida",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 18000,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 10000,
+          "max": 30000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 92,
+      "nome": "Salsa",
+      "nome_cientifico": "Petroselinum crispum",
+      "tipo": "erva",
+      "perfil_cultivo": "erva_solar_umida",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 18000,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 10000,
+          "max": 30000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 93,
+      "nome": "Cebolinha",
+      "nome_cientifico": "Allium schoenoprasum",
+      "tipo": "erva",
+      "perfil_cultivo": "erva_solar_umida",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 18000,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 10000,
+          "max": 30000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 94,
+      "nome": "Tomilho",
+      "nome_cientifico": "Thymus vulgaris",
+      "tipo": "erva",
+      "perfil_cultivo": "erva_solar_seca",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 22000,
+        "umidade_solo": 40
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 17,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 20,
+          "max": 60
+        }
+      }
+    },
+    {
+      "id": 95,
+      "nome": "Orégano",
+      "nome_cientifico": "Origanum vulgare",
+      "tipo": "erva",
+      "perfil_cultivo": "erva_solar_seca",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 22000,
+        "umidade_solo": 40
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 17,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 20,
+          "max": 60
+        }
+      }
+    },
+    {
+      "id": 96,
+      "nome": "Lavanda",
+      "nome_cientifico": "Lavandula angustifolia",
+      "tipo": "erva",
+      "perfil_cultivo": "erva_solar_seca",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 22000,
+        "umidade_solo": 40
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 17,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 20,
+          "max": 60
+        }
+      }
+    },
+    {
+      "id": 97,
+      "nome": "Sálvia",
+      "nome_cientifico": "Salvia officinalis",
+      "tipo": "erva",
+      "perfil_cultivo": "erva_solar_seca",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 50,
+        "ldr": 22000,
+        "umidade_solo": 40
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 17,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 35,
+          "max": 70
+        },
+        "ldr": {
+          "min": 12000,
+          "max": 35000
+        },
+        "umidade_solo": {
+          "min": 20,
+          "max": 60
+        }
+      }
+    },
+    {
+      "id": 98,
+      "nome": "Coentro",
+      "nome_cientifico": "Coriandrum sativum",
+      "tipo": "erva",
+      "perfil_cultivo": "erva_solar_umida",
+      "valores_ideais": {
+        "temperatura": 24,
+        "umidade_ar": 55,
+        "ldr": 18000,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 30
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 10000,
+          "max": 30000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 99,
+      "nome": "Alface",
+      "nome_cientifico": "Lactuca sativa",
+      "tipo": "hortalica",
+      "perfil_cultivo": "hortalica_folha",
+      "valores_ideais": {
+        "temperatura": 21,
+        "umidade_ar": 55,
+        "ldr": 18000,
+        "umidade_solo": 65
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 15,
+          "max": 27
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 10000,
+          "max": 30000
+        },
+        "umidade_solo": {
+          "min": 45,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": 100,
+      "nome": "Tomateiro",
+      "nome_cientifico": "Solanum lycopersicum",
+      "tipo": "hortalica",
+      "perfil_cultivo": "hortalica_fruto",
+      "valores_ideais": {
+        "temperatura": 25,
+        "umidade_ar": 60,
+        "ldr": 30000,
+        "umidade_solo": 60
+      },
+      "faixas_referencia": {
+        "temperatura": {
+          "min": 18,
+          "max": 32
+        },
+        "umidade_ar": {
+          "min": 40,
+          "max": 75
+        },
+        "ldr": {
+          "min": 15000,
+          "max": 45000
+        },
+        "umidade_solo": {
+          "min": 40,
+          "max": 80
+        }
+      }
+    }
+  ]
+}
